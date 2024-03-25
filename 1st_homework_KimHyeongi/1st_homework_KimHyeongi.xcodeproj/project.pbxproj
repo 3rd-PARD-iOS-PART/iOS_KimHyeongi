@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1436575B2BA8519300BE3237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436575A2BA8519300BE3237 /* ViewController.swift */; };
+		14956DFD2BAEB7CC0076652D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14956DFC2BAEB7CC0076652D /* ViewController.swift */; };
 		1498173B2BA587C4004C72F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498173A2BA587C4004C72F2 /* AppDelegate.swift */; };
 		1498173D2BA587C4004C72F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498173C2BA587C4004C72F2 /* SceneDelegate.swift */; };
 		149817422BA587C4004C72F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149817402BA587C4004C72F2 /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1436575A2BA8519300BE3237 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
+		14956DFC2BAEB7CC0076652D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		149817372BA587C4004C72F2 /* 1st_homework_KimHyeongi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1st_homework_KimHyeongi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1498173A2BA587C4004C72F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1498173C2BA587C4004C72F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,11 +101,11 @@
 			children = (
 				1498173A2BA587C4004C72F2 /* AppDelegate.swift */,
 				1498173C2BA587C4004C72F2 /* SceneDelegate.swift */,
-				1436575A2BA8519300BE3237 /* ViewController.swift */,
 				149817402BA587C4004C72F2 /* Main.storyboard */,
 				149817432BA587C5004C72F2 /* Assets.xcassets */,
 				149817452BA587C5004C72F2 /* LaunchScreen.storyboard */,
 				149817482BA587C5004C72F2 /* Info.plist */,
+				14956DFC2BAEB7CC0076652D /* ViewController.swift */,
 			);
 			path = 1st_homework_KimHyeongi;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1436575B2BA8519300BE3237 /* ViewController.swift in Sources */,
+				14956DFD2BAEB7CC0076652D /* ViewController.swift in Sources */,
 				1498173B2BA587C4004C72F2 /* AppDelegate.swift in Sources */,
 				1498173D2BA587C4004C72F2 /* SceneDelegate.swift in Sources */,
 			);
