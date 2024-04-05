@@ -49,8 +49,7 @@ class HomeViewController: UIViewController {
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [logoButton, navButton1, navButton2, navButton3])
         stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-
+        stackView.distribution = .equalSpacing
         return stackView
     }()
     
@@ -108,12 +107,22 @@ class HomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
+        /*
+         frame: Super View 좌표계에서 View의 위치와 크기를 나타낸다
+         Super View란? 계층 구조에서, 현재 View의 한칸 윗 계층 View -> 최상위 루트를 말하는 것이 아님.
+         frame.origin(x, y) 좌표는 Super View의 원점을 (0, 0)으로 놓고 원점으로부터 얼마나 떨어져 있는지를 나타낸 것
+         frame.size: View 영역을 모두 감싸는 사각형으로 나타낸 것
+         
+         bounds: Super View와 아무 상관이 없으며 기준이 자기 자신 -> 자신의 원점이 (0, 0)
+         처음엔 무조건 origin이 (0, 0)이다
+         bounds.size: View 자체의 영역을 나타낸 것
+         */
     }
     
     private func setupConstraints() {
         stackView.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.width.equalTo(view.bounds.width)
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().inset(30)
             make.top.equalToSuperview().offset(70)
         }
     }
@@ -147,7 +156,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         switch indexPath.section {
-        case Sections.PopularMovies.rawValue:
+        case Sections.PopularMovies.rawValue: // 0
             APICaller.shared.getPopularMovies { result in
                 switch result {
                 case .success(let movies):
@@ -156,7 +165,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-        case Sections.TrendingMovies.rawValue:
+        case Sections.TrendingMovies.rawValue: // 1
             APICaller.shared.getTrendingMovies { result in
                 switch result {
                 case .success(let movies):
@@ -165,7 +174,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-        case Sections.Temp1.rawValue:
+        case Sections.Temp1.rawValue: // 2
             APICaller.shared.getPopularMovies { result in
                 switch result {
                 case .success(let movies):
@@ -174,7 +183,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-        case Sections.Temp2.rawValue:
+        case Sections.Temp2.rawValue: // 3
             APICaller.shared.getTrendingMovies { result in
                 switch result {
                 case .success(let movies):
@@ -183,7 +192,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-        case Sections.Temp3.rawValue:
+        case Sections.Temp3.rawValue: // 4
             APICaller.shared.getPopularMovies { result in
                 switch result {
                 case .success(let movies):
@@ -192,7 +201,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-        case Sections.Temp4.rawValue:
+        case Sections.Temp4.rawValue: // 5
             APICaller.shared.getTrendingMovies { result in
                 switch result {
                 case .success(let movies):
@@ -201,7 +210,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-        default:
+        default: // 6 ~
             APICaller.shared.getTrendingMovies { result in
                 switch result {
                 case .success(let movies):
