@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140FB7182BE22E780079160A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 140FB7172BE22E780079160A /* Then */; };
+		140FB71A2BE27C470079160A /* PagingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140FB7192BE27C470079160A /* PagingTabBar.swift */; };
+		140FB71C2BE27C690079160A /* PagingTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140FB71B2BE27C690079160A /* PagingTabBarCell.swift */; };
+		140FB71E2BE27CDE0079160A /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140FB71D2BE27CDE0079160A /* PagingView.swift */; };
+		140FB7202BE27CF30079160A /* PagingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140FB71F2BE27CF30079160A /* PagingCollectionViewCell.swift */; };
+		140FB7242BE2AFB30079160A /* EpisodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140FB7232BE2AFB30079160A /* EpisodeCollectionViewCell.swift */; };
 		1462688D2BC920D100789600 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462688C2BC920D100789600 /* SearchTableViewCell.swift */; };
 		1462688F2BC930B100789600 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462688E2BC930B100789600 /* SearchViewModel.swift */; };
 		146268912BC9612D00789600 /* ComingSoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146268902BC9612D00789600 /* ComingSoonModel.swift */; };
@@ -53,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140FB7192BE27C470079160A /* PagingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabBar.swift; sourceTree = "<group>"; };
+		140FB71B2BE27C690079160A /* PagingTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabBarCell.swift; sourceTree = "<group>"; };
+		140FB71D2BE27CDE0079160A /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		140FB71F2BE27CF30079160A /* PagingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewCell.swift; sourceTree = "<group>"; };
+		140FB7232BE2AFB30079160A /* EpisodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1462688C2BC920D100789600 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		1462688E2BC930B100789600 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = 2nd_homework_KimHyeongi/View/SearchViewModel.swift; sourceTree = SOURCE_ROOT; };
 		146268902BC9612D00789600 /* ComingSoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComingSoonModel.swift; path = 2nd_homework_KimHyeongi/View/ComingSoonModel.swift; sourceTree = SOURCE_ROOT; };
@@ -89,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B2365A2BBC07CE00F4A71E /* SDWebImage in Frameworks */,
+				140FB7182BE22E780079160A /* Then in Frameworks */,
 				14E533022BB9B50E003AD34F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +144,11 @@
 				14B236562BBC065300F4A71E /* MovieCollectionViewCell.swift */,
 				1462688C2BC920D100789600 /* SearchTableViewCell.swift */,
 				146268922BC9620200789600 /* SoonTableViewCell.swift */,
+				140FB7192BE27C470079160A /* PagingTabBar.swift */,
+				140FB71B2BE27C690079160A /* PagingTabBarCell.swift */,
+				140FB71D2BE27CDE0079160A /* PagingView.swift */,
+				140FB71F2BE27CF30079160A /* PagingCollectionViewCell.swift */,
+				140FB7232BE2AFB30079160A /* EpisodeCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +252,7 @@
 			packageProductDependencies = (
 				14E533012BB9B50E003AD34F /* SnapKit */,
 				14B236592BBC07CE00F4A71E /* SDWebImage */,
+				140FB7172BE22E780079160A /* Then */,
 			);
 			productName = 2nd_homework_KimHyeongi;
 			productReference = 14E532CD2BB9AD9C003AD34F /* 2nd_homework_KimHyeongi.app */;
@@ -311,6 +329,7 @@
 			packageReferences = (
 				14E533002BB9B50E003AD34F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				14B236582BBC07CE00F4A71E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				140FB7162BE22E780079160A /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 14E532CE2BB9AD9C003AD34F /* Products */;
 			projectDirPath = "";
@@ -358,14 +377,19 @@
 				14E533062BB9B703003AD34F /* SearchViewController.swift in Sources */,
 				14B236572BBC065300F4A71E /* MovieCollectionViewCell.swift in Sources */,
 				1462688F2BC930B100789600 /* SearchViewModel.swift in Sources */,
+				140FB71E2BE27CDE0079160A /* PagingView.swift in Sources */,
 				14B236512BBBAF2300F4A71E /* HeroHeaderUIView.swift in Sources */,
 				14B236552BBBF73B00F4A71E /* Movie.swift in Sources */,
+				140FB7202BE27CF30079160A /* PagingCollectionViewCell.swift in Sources */,
 				14E532D52BB9AD9C003AD34F /* TabViewController.swift in Sources */,
 				14E5330A2BB9B72C003AD34F /* DownloadsViewController.swift in Sources */,
 				14E532D12BB9AD9C003AD34F /* AppDelegate.swift in Sources */,
 				14E532D32BB9AD9C003AD34F /* SceneDelegate.swift in Sources */,
 				1462688D2BC920D100789600 /* SearchTableViewCell.swift in Sources */,
 				14B2364F2BBB06B500F4A71E /* CollectionViewTableViewCell.swift in Sources */,
+				140FB71A2BE27C470079160A /* PagingTabBar.swift in Sources */,
+				140FB71C2BE27C690079160A /* PagingTabBarCell.swift in Sources */,
+				140FB7242BE2AFB30079160A /* EpisodeCollectionViewCell.swift in Sources */,
 				14E5330C2BB9B736003AD34F /* MoreViewController.swift in Sources */,
 				14B236532BBBF02600F4A71E /* APICaller.swift in Sources */,
 				146268912BC9612D00789600 /* ComingSoonModel.swift in Sources */,
@@ -721,6 +745,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		140FB7162BE22E780079160A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		14B236582BBC07CE00F4A71E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -740,6 +772,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		140FB7172BE22E780079160A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 140FB7162BE22E780079160A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		14B236592BBC07CE00F4A71E /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 14B236582BBC07CE00F4A71E /* XCRemoteSwiftPackageReference "SDWebImage" */;
