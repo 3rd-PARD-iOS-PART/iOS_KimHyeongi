@@ -1,4 +1,5 @@
 {
+  "originHash" : "a49512f8c40325b920841a9b4de2e773307c4a5b1ebe19fae3a310bb47c1f372",
   "pins" : [
     {
       "identity" : "sdwebimage",
@@ -17,7 +18,16 @@
         "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
         "version" : "5.7.1"
       }
+    },
+    {
+      "identity" : "then",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/Then",
+      "state" : {
+        "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a",
+        "version" : "3.0.0"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
