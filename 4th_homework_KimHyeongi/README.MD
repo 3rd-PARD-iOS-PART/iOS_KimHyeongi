@@ -2,7 +2,7 @@
 
 ## 홈화면
 <img src="https://github.com/3rd-PARD-iOS-PART/iOS_KimHyeongi/assets/61077215/5ff762da-c1e0-4242-a74e-a9b8a42e247c" width="200" />
-
+
 ## 검색화면
 <img src="https://github.com/3rd-PARD-iOS-PART/iOS_KimHyeongi/assets/61077215/3adb5c93-f339-42e1-8ee2-d825b29a86c9" width="200" />
 
